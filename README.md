@@ -1,7 +1,6 @@
 # BCO Execution
 
-Repository to share data, workflows, apps, and scripts working toward the goal of execution of BCOs
-as CWL workflows.
+Repository to share data, workflows, apps, and scripts working toward the goal of execution of BioCompute Objects (BCO).
 
 ![](https://img.shields.io/badge/Status-under--dev-red.svg) ![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg) ![License: AGPL-3.0](https://img.shields.io/github/license/skoc/BCO-Execution.svg)
 
@@ -9,7 +8,7 @@ as CWL workflows.
 
 # Usage Notes
 
-This repository include all the required apps/tools to crate BioCompute Object (BCO) from scratch or CWL workflow, and provides an easy-to-use script to validate and excute given BCO with provided workflow language in its 'Execution Domain'.
+This repository include all the required apps/tools to crate BCO from scratch or CWL workflow, and provides an easy-to-use script to validate and excute given BCO with provided workflow language in its 'Execution Domain'.
 
 Begin by cloning the repo to your local machine.
 
