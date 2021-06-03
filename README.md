@@ -36,6 +36,7 @@ Clone the repository and install the enviroment:
 Create a conda environment from it as follows:
 
 `conda env create -f environment.yml`
+
 `conda activate bco`
 
 #### Supported commands:
