@@ -26,7 +26,7 @@ Begin by cloning the repo to your local machine.
 
 Using the Docker version is recommended unless doing development work on the BCO App itself.
 
-### BCO Runner Script Installation
+### BCO Runner Script Installation [1]
 
 #### To install:
 
@@ -86,6 +86,6 @@ data files, as well as in the PDXNet Datapool.
 
 # References
 
-[bcotool by Hadley King](https://github.com/HadleyKing/bcotool)
+1. [bcotool by Hadley King](https://github.com/HadleyKing/bcotool)
 
-[BioCompute Objects](https://biocomputeobject.org/)
+2. [BioCompute Objects](https://biocomputeobject.org/)
