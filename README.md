@@ -70,18 +70,6 @@ python bco_runner.py run_cwl -b <BCO_FILE>
 
 ```
 
-## Getting the required test data
-
-The test dataset is whole-genome sequencing supplied by the broad for testing
-GATK best practice workflows. These are accessible through either AWS or GCP.
-
-1. Navigate to the test_data directory in the repository and either run the bash
-or execute the same command contained within using `gsutil` to download gatk test
-data to your local machine.
-2. Look in the file test_data directory for the file which outlines the required
-files you'll need to download from the SB Platform. These are available as public
-data files, as well as in the PDXNet Datapool.
-
 
 # References
 
