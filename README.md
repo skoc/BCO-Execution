@@ -64,9 +64,9 @@ optional arguments:
 python bco_runner.py validate -b <BCO_FILE>
 ``` 
 
-#### Run CWL of BCO via run_cwl
+#### Run CWL of BCO
 ```
-python bco_runner.py cwl_runner -b <BCO_FILE>
+python bco_runner.py run_cwl -b <BCO_FILE>
 
 ```
 
