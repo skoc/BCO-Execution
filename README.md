@@ -3,6 +3,10 @@
 Repository to share data and scripts working toward the goal of execution of BCOs
 as CWL workflows.
 
+![License: MIT](https://img.shields.io/github/license/skoc/bcpm-pfda-challenge.svg)
+
+<img src="https://raw.githubusercontent.com/skoc/BCO-Execution/master/img/bco_execution_flow.png" align="right" alt="summary" height="320" width="410" />
+
 ## Usage Notes
 
 This repository documents rough, in-progress, work toward creating an executable
