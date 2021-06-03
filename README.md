@@ -4,12 +4,11 @@ Repository to share data and scripts working toward the goal of execution of BCO
 as CWL workflows.
 
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-
 ![License: AGPL-3.0](https://img.shields.io/github/license/skoc/BCO-Execution.svg)
 
 <img src="https://raw.githubusercontent.com/skoc/BCO-Execution/master/img/bco_execution_flow.png" align="center" alt="summary" />
 
-## Usage Notes
+# Usage Notes
 
 This repository documents rough, in-progress, work toward creating an executable
 BCO. To accomplish this, test workflows as well as test datasets are required.
@@ -17,20 +16,20 @@ Two workflows are (so far) included here.
 
 Begin by cloning the repo to your local machine.
 
-### Software requirements
+## Software requirements
 
-#### BCO APP Installation
+### BCO APP Installation
 
-##### Getting the BCO R Shiny app
+#### Getting the BCO R Shiny app
 
 1. Navigate to the BCO App Github Page: https://github.com/sbg/bco-app
 2. Clone the repo, or follow the directions for running through the Docker container
 
 Using the Docker version is recommended unless doing development work on the BCO App itself.
 
-#### BCO Runner Script Installation
+### BCO Runner Script Installation
 
-##### To install:
+#### To install:
 
 Clone the repository and install the enviroment:
 
@@ -42,7 +41,7 @@ Create a conda environment from it as follows:
 
 `conda env create -f environment.yml`
 
-##### Supported commands:
+#### Supported commands:
 
 ```
 python bco_runner.py --help
@@ -62,18 +61,18 @@ optional arguments:
 
 ```
 
-##### Validate BCO
+#### Validate BCO
 ```
 python bco_runner.py validate -b <BCO_FILE>
 ``` 
 
-##### Run CWL of BCO via run_cwl
+#### Run CWL of BCO via run_cwl
 ```
 python bco_runner.py cwl_runner -b <BCO_FILE>
 
 ```
 
-### Getting the required test data
+## Getting the required test data
 
 The test dataset is whole-genome sequencing supplied by the broad for testing
 GATK best practice workflows. These are accessible through either AWS or GCP.
@@ -86,7 +85,7 @@ files you'll need to download from the SB Platform. These are available as publi
 data files, as well as in the PDXNet Datapool.
 
 
-## Reference
+# References
 
 [bcotool by Hadley King](https://github.com/HadleyKing/bcotool)
 
