@@ -26,7 +26,7 @@ Begin by cloning the repo to your local machine.
 
 Using the Docker version is recommended unless doing development work on the BCO App itself.
 
-### BCO Runner Script Installation [1]
+### BCO Runner Script Installation [1](https://github.com/HadleyKing/bcotool)
 
 #### To install:
 
