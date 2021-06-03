@@ -3,7 +3,9 @@
 Repository to share data and scripts working toward the goal of execution of BCOs
 as CWL workflows.
 
-![License: MIT](https://img.shields.io/github/license/skoc/bcpm-pfda-challenge.svg)
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+
+![License: AGPL-3.0](https://img.shields.io/github/license/skoc/BCO-Execution.svg)
 
 <img src="https://raw.githubusercontent.com/skoc/BCO-Execution/master/img/bco_execution_flow.png" align="center" alt="summary" />
 
@@ -11,20 +13,65 @@ as CWL workflows.
 
 This repository documents rough, in-progress, work toward creating an executable
 BCO. To accomplish this, test workflows as well as test datasets are required.
-Two workflows are (so far) included here. One is from the SilicoFCM project, and
-is the intended final use case (bwa-gatk-annotation-bix2mus-workflow.cwl). The
-other approximates many of the same steps, but is a public workflow available on
-all SBG platforms (gatk-best-practice-data-pre-processing-4.1.0.0.cwl).
+Two workflows are (so far) included here. 
 
 Begin by cloning the repo to your local machine.
 
 ### Software requirements
 
-1. cwltool - The CWL reference runner available through pypi `pip install cwltool`
-2. toil - An open-source pure-Python workflow engine available through pypi `pip install toil`
-3. cwl extension for toil `pip install 'toil[cwl]'`
-4. Docker - https://docs.docker.com/docker-for-mac/install/ (or linux)
-5. gsutil - cli utility for interfacing with Google Cloud buckets `pip install gsutil` (to get test data)
+#### BCO APP Installation
+
+##### Getting the BCO R Shiny app
+
+1. Navigate to the BCO App Github Page: https://github.com/sbg/bco-app
+2. Clone the repo, or follow the directions for running through the Docker container
+
+Using the Docker version is recommended unless doing development work on the BCO App itself.
+
+#### BCO Runner Script Installation
+
+##### To install:
+
+Clone the repository and install the enviroment:
+
+`git clone https://github.com/skoc/BCO-Execution.git`
+
+`cd BCO-Execution/bco_runner`
+
+Create a conda environment from it as follows:
+
+`conda env create -f environment.yml`
+
+##### Supported commands:
+
+```
+python bco_runner.py --help
+
+positional arguments:
+  {functions,license,validate,run_cwl}
+    functions           list all available functions
+    license             Prints BCO License
+    validate            Validation options. Used to test a BCO against a JSON
+                        schema. If no schema is supplied the ieee-2791-schema
+                        is used as the default
+    run_cwl             run a CWL
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+
+```
+
+##### Validate BCO
+```
+python bco_runner.py validate -b <BCO_FILE>
+``` 
+
+##### Run CWL of BCO via run_cwl
+```
+python bco_runner.py cwl_runner -b <BCO_FILE>
+
+```
 
 ### Getting the required test data
 
@@ -38,25 +85,9 @@ data to your local machine.
 files you'll need to download from the SB Platform. These are available as public
 data files, as well as in the PDXNet Datapool.
 
-### Getting the BCO R Shiny app
 
-1. Navigate to the BCO App Github Page: https://github.com/sbg/bco-app
-2. Clone the repo, or follow the directions for running through the Docker container
+## Reference
 
-Using the Docker version is recommended unless doing development work on the BCO App itself.
+[bcotool by Hadley King](https://github.com/HadleyKing/bcotool)
 
-### Goals
-
-1. Identify test workflows
-2. Identify test datasets
-3. Create BCO from test workflows
-4. Execute test workflow, or subset of steps from workflow, locally
-5. Determine implementation details for executable BCO
-6. Create executable BCO for test workflows
-
-### Current status
-
-#### 2021-06-02
-- Test datasets located
-- BCO App creates BCO from test workflows
-- Test workflows not yet executing locally
+[BioCompute Objects](https://biocomputeobject.org/)
