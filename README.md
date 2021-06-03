@@ -5,7 +5,7 @@ as CWL workflows.
 
 ![License: MIT](https://img.shields.io/github/license/skoc/bcpm-pfda-challenge.svg)
 
-<img src="https://raw.githubusercontent.com/skoc/BCO-Execution/master/img/bco_execution_flow.png" align="right" alt="summary" height="320" width="410" />
+<img src="https://raw.githubusercontent.com/skoc/BCO-Execution/master/img/bco_execution_flow.png" align="center" alt="summary" />
 
 ## Usage Notes
 
