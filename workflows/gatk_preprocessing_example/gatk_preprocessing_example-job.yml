@@ -1,19 +1,17 @@
 in_alignments:
-  class: File
-  path: NA12878_A.bam
+  - [class: File, location: NA12878_A.bam]
 
 reference_index_tar:
   class: File
-  path: GRCh38_primary_assembly_plus_ebv_alt_decoy_hla.fasta.tar
+  location: GRCh38_primary_assembly_plus_ebv_alt_decoy_hla.fasta.tar
 
 in_reference:
   class: File
-  path: Homo_sapiens_assembly38.fasta
+  location: Homo_sapiens_assembly38.fasta
 
 ref_dict:
   class: File
-  path: Homo_sapiens_assembly38.dict
+  location: Homo_sapiens_assembly38.dict
 
 known_sites:
-  class: File
-  path: KnownSites_Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
+  - [class: File, location: KnownSites_Mills_and_1000G_gold_standard.indels.hg38.vcf.gz]
