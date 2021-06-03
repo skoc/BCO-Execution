@@ -3,8 +3,7 @@
 Repository to share data and scripts working toward the goal of execution of BCOs
 as CWL workflows.
 
-[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![License: AGPL-3.0]](https://img.shields.io/github/license/skoc/BCO-Execution.svg)
+![](https://img.shields.io/badge/Status-under--dev-red.svg) ![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)![License: AGPL-3.0](https://img.shields.io/github/license/skoc/BCO-Execution.svg)
 
 <img src="https://raw.githubusercontent.com/skoc/BCO-Execution/master/img/bco_execution_flow.png" align="center" alt="summary" />
 
