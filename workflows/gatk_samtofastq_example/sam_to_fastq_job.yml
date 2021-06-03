@@ -1,0 +1,3 @@
+in_alignments:
+  class: File
+  path: NA12878_A.bam
