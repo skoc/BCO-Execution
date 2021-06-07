@@ -6,6 +6,16 @@ Repository to share data, workflows, apps, and scripts working toward the goal o
 
 <img src="https://raw.githubusercontent.com/skoc/BCO-Execution/master/img/bco_execution_flow.png" align="center" alt="summary" />
 
+This repository also includes two example workflows that can be used to generate a BCO.
+One, is a simple CWL tool definition using the common NGS quality control program
+[fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). The second
+is a part of the GATK workflows, the Broad Best Practice Data Pre-processing Workflow.
+This workflow is intended to prepare whole-exome or whole-genome sequencing data
+for variant calling. The included workflow is publicly available from the Broad
+and Seven Bridges' public Open Workflows repository [here](https://github.com/sevenbridges-openworkflows/Broad-Best-Practice-Data-pre-processing-CWL1.0-workflow).
+It has been packed into a single .cwl file for convenience. The included .yml
+files describe jobs that were validated through [cwltool](https://github.com/common-workflow-language/cwltool) and [toil](https://toil.readthedocs.io/en/latest/).
+
 # Usage Notes
 
 This repository include all the required apps/tools to crate BCO from scratch or CWL workflow, and provides an easy-to-use script to validate and excute given BCO with provided workflow language in its 'Execution Domain'.

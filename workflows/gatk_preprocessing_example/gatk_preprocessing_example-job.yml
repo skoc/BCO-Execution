@@ -1,5 +1,6 @@
 in_alignments:
-  - [class: File, location: NA12878_A.bam]
+  - class: File
+    location: NA12878_A.bam
 
 reference_index_tar:
   class: File
@@ -8,10 +9,19 @@ reference_index_tar:
 in_reference:
   class: File
   location: Homo_sapiens_assembly38.fasta
+  secondaryFiles:
+    - class: File
+      location: Homo_sapiens_assembly38.fasta.fai
+    - class: File
+      location: Homo_sapiens_assembly38.dict
 
 ref_dict:
   class: File
   location: Homo_sapiens_assembly38.dict
 
-known_sites:
-  - [class: File, location: KnownSites_Mills_and_1000G_gold_standard.indels.hg38.vcf.gz]
+known_indels:
+  - class: File
+    location: KnownSites_Mills_and_1000G_gold_standard.indels.hg38.vcf
+    secondaryFiles:
+    - class: File
+      location: KnownSites_Mills_and_1000G_gold_standard.indels.hg38.vcf.idx
