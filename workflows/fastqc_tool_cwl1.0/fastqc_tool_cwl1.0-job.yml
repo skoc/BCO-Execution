@@ -1,0 +1,2 @@
+in_reads:
+  - {class: File, path: H06HDADXX130110.1.ATCACGAT.20k_reads_1.fastq}
